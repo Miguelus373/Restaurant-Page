@@ -1,24 +1,24 @@
-export default function menuLoad(content) {
+export default function menuLoad(content, cakes) {
   content.innerHTML = `
   <div class='menu-page'>
     <h1 class='menu-head'>Pick your favorite Cake!</h1>
     <div class="cakes-container">
-      <div class="cake">
-        <img src="../src/drip.png" class="cake-img"/>
-        <h2>Drip Cake</h2>
-        <p>$25</p>
-      </div>
-      <div class="cake">
-        <img src="../src/red-velvet.png" class="cake-img"/>
-        <h2>Red Velvet</h2>
-        <p>$20</p>
-      </div>
-      <div class="cake">
-        <img src="../src/cupcakes.png" class="cake-img"/>
-        <h2>Cupcakes</h2>
-        <p>$10</p>
-      </div>
     </div>
   </div>
   `;
+
+  const container = document.querySelector('div.cakes-container');
+
+  cakes.forEach(item => {
+    const cake = document.createElement('div');
+    cake.setAttribute('class', 'cake');
+
+    cake.innerHTML = `
+    <img src="${item.img}"/>
+    <h2>${item.name}</h2>
+    <p>$${item.price}</p>
+    `;
+
+    container.appendChild(cake);
+  });
 }
