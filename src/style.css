@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-bg {
+  background: linear-gradient(rgb(187, 8, 8), rgb(128, 12, 12));
+  width: 100%;
+}
+
+.tab {
+  color: #fff;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  font-weight: 600;
+}
+
+.main-page,
+.menu-page,
+.contact-page {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+}
+
+.main-page {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0)),
+    url("./head-img.jpeg");
+  justify-content: center;
+  text-shadow: 3px 3px #000;
+}
+
+.headline {
+  font-size: 4rem;
+  margin: 1rem;
+}
+
+.description {
+  font-size: 2rem;
+  margin: 1rem;
+  font-weight: 600;
+}
+
+.menu-page {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0.1)),
+    url("./menu-img.jpg");
+}
+
+.menu-head,
+.thanks {
+  margin-top: 5rem;
+  text-shadow: 3px 3px #000;
+}
+
+.cakes-container {
+  min-width: 28rem;
+  width: 55%;
+  height: 100%;
+  padding: 0 1.2rem;
+}
+
+.cake {
+  background: rgba(206, 206, 206, 0.8);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1rem;
+  border-radius: 4px;
+}
+
+.cake img {
+  width: auto;
+  height: 10rem;
+}
+
+.cake p,
+.cake h2 {
+  font-size: 160%;
+  color: rgb(66, 33, 10);
+  letter-spacing: 3px;
+}
+
+.contact-page {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0.1)),
+    url("contact-img.jpg");
+}
+
+.contact {
+  margin-top: 2.5rem;
+  text-shadow: 2.5px 2.5px #000;
+}
+
+.contact-list {
+  list-style: none;
+  font-size: 130%;
+  text-align: center;
+  margin-top: 1rem;
+  text-shadow: 2px 2px #000;
+}
+
+.info {
+  margin: 0.5rem 0 1.4rem;
+}
+
+.bg {
+  background: linear-gradient(rgb(187, 8, 8), rgb(128, 12, 12));
+}
+
+.tab:hover {
+  background: none red;
+}
+
+.bg:focus {
+  background: none transparent;
+}
