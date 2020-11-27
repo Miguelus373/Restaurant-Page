@@ -1,4 +1,4 @@
-export default function contactLoad(content) {
+const contactLoad = content => {
   content.innerHTML = `<div class='contact-page'>
   <h1 class='thanks'>Thanks for visiting!</h1>
   <h2 class='contact'>Feel free to contact Us:</h2>
@@ -9,4 +9,6 @@ export default function contactLoad(content) {
     <li class='info'>Email: cakeshop@email.com</li>
   </ul>
   </div>`;
-}
+};
+
+export { contactLoad as default };

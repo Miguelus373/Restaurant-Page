@@ -1,4 +1,4 @@
-export default function menuLoad(content, cakes) {
+const menuLoad = (content, cakes) => {
   content.innerHTML = `
   <div class='menu-page'>
     <h1 class='menu-head'>Pick your favorite Cake!</h1>
@@ -21,4 +21,6 @@ export default function menuLoad(content, cakes) {
 
     container.appendChild(cake);
   });
-}
+};
+
+export { menuLoad as default };
