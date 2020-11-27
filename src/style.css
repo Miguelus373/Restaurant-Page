@@ -33,7 +33,7 @@ nav {
 }
 
 .main-page {
-  background-image: linear-gradient(rgba(0, 0, 0, 0) 44%, rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0)),
     url("./head-img.jpeg");
   justify-content: center;
   text-shadow: 3px 3px #000;
@@ -55,7 +55,8 @@ nav {
     url("./menu-img.jpg");
 }
 
-.menu-head {
+.menu-head,
+.thanks {
   margin-top: 5rem;
   text-shadow: 3px 3px #000;
 }
@@ -87,6 +88,29 @@ nav {
   color: rgb(66, 33, 10);
   letter-spacing: 3px;
 }
+
+.contact-page {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0.1)),
+  url("https://canalcocina.es/medias/_cache/zoom-e492dcdc8798d0e8c76cf469e03bd8d4-920-518.jpg");
+}
+
+.contact {
+  margin-top: 2.5rem;
+  text-shadow: 2.5px 2.5px #000;
+}
+
+.contact-list {
+  list-style: none;
+  font-size: 130%;
+  text-align: center;
+  margin-top: 1rem;
+  text-shadow: 2px 2px #000;
+}
+
+.info {
+  margin: 0.5rem 0 1.4rem;
+}
+
 
 .tab:hover {
   background-color: red;

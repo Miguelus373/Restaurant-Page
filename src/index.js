@@ -11,7 +11,7 @@ import cupcakesImg from './cupcakes.png';
 const content = document.getElementById('content');
 const cakeList = [];
 
-main(content);
+info(content);
 
 const home = document.getElementById('home');
 home.addEventListener('click', () => { main(content); });
