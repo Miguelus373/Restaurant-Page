@@ -10,7 +10,7 @@ nav {
   width: 100%;
   background: linear-gradient(rgb(236, 8, 8), rgb(177, 14, 14));
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .tab {
@@ -21,7 +21,8 @@ nav {
 }
 
 .main-page,
-.menu-page {
+.menu-page,
+.contact-page {
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -35,6 +36,7 @@ nav {
   background-image: linear-gradient(rgba(0, 0, 0, 0) 44%, rgba(0, 0, 0, 0.5)),
     url("./head-img.jpeg");
   justify-content: center;
+  text-shadow: 3px 3px #000;
 }
 
 .headline {
@@ -45,6 +47,7 @@ nav {
 .description {
   font-size: 2rem;
   margin: 1rem;
+  font-weight: 600;
 }
 
 .menu-page {
@@ -54,6 +57,7 @@ nav {
 
 .menu-head {
   margin-top: 5rem;
+  text-shadow: 3px 3px #000;
 }
 
 .cakes-container {
@@ -81,4 +85,9 @@ nav {
 .cake h2 {
   font-size: 160%;
   color: rgb(66, 33, 10);
+  letter-spacing: 3px;
+}
+
+.tab:hover {
+  background-color: red;
 }
