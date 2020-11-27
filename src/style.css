@@ -8,9 +8,13 @@ nav {
   position: absolute;
   top: 0;
   width: 100%;
-  background: linear-gradient(rgb(236, 8, 8), rgb(177, 14, 14));
   display: flex;
   justify-content: center;
+}
+
+.nav-bg {
+  background: linear-gradient(rgb(187, 8, 8), rgb(128, 12, 12));
+  width: 100%;
 }
 
 .tab {
@@ -33,7 +37,8 @@ nav {
 }
 
 .main-page {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0)),
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0)),
     url("./head-img.jpeg");
   justify-content: center;
   text-shadow: 3px 3px #000;
@@ -51,7 +56,8 @@ nav {
 }
 
 .menu-page {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0.1)),
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0.1)),
     url("./menu-img.jpg");
 }
 
@@ -90,8 +96,9 @@ nav {
 }
 
 .contact-page {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0.1)),
-  url("https://canalcocina.es/medias/_cache/zoom-e492dcdc8798d0e8c76cf469e03bd8d4-920-518.jpg");
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0.1)),
+    url("contact-img.jpg");
 }
 
 .contact {
@@ -111,7 +118,14 @@ nav {
   margin: 0.5rem 0 1.4rem;
 }
 
+.bg {
+  background: linear-gradient(rgb(187, 8, 8), rgb(128, 12, 12));
+}
 
 .tab:hover {
-  background-color: red;
+  background: none red;
+}
+
+.bg:focus {
+  background: none transparent;
 }
